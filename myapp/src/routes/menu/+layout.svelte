@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { LayoutData } from './$types';
-    
+    import Title from '$lib/navbar.svelte'
     export let data: LayoutData;
 </script>
 something
