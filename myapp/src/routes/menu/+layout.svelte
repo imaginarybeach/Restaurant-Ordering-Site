@@ -7,10 +7,10 @@ something
 <slot />
 <nav>
     <h1>
-        does this work
+        does this work hello
 
     </h1>
-</nav>
+</nav> 
 
 
 
