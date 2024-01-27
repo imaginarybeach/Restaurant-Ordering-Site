@@ -3,8 +3,9 @@
 </script>
 
 <div class="title">
-    <img src="/logo.ico" alt="site logo">
+    <!-- <img src="/logo.ico" alt="site logo"> -->
     <h1>{title}</h1>
+    <h1>Code and Cusine</h1>
 
 </div>
 
