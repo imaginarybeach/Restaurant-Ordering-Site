@@ -1,10 +1,13 @@
-<script lang="ts">
-    import type { LayoutData } from './$types';
-    import Title from '$lib/navbar.svelte'
-    export let data: LayoutData;
+<!-- npm run dev -->
+<!-- reactive javascript code goes in script-->
+<script>
+    import Title from '$lib/title.svelte'
+
 </script>
-something
-<slot />
+
+
+<Title />
+
 <nav>
     <h1>
         does this work hello

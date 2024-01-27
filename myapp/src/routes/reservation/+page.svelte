@@ -1,9 +1,11 @@
-<script lang="ts">
+<!-- npm run dev -->
+<!-- reactive javascript code goes in script-->
+<script>
+    import Title from '$lib/title.svelte'
 
-    import Title from '$lib/navbar.svelte'
-    import type { PageData } from './$types';
-    
-    export let data: PageData;
 </script>
+
+
+<Title />
 
 <h1>Reservation</h1>

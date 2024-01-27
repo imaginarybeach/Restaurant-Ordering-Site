@@ -1,5 +1,9 @@
-<script lang="ts">
-    import type { PageData } from './$types';
-    import Title from '$lib/navbar.svelte'
-    export let data: PageData;
+<!-- npm run dev -->
+<!-- reactive javascript code goes in script-->
+<script>
+    import Title from '$lib/title.svelte'
+
 </script>
+
+
+<Title />
