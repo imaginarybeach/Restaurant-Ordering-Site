@@ -1,11 +1,15 @@
 <script>
-    export let title = "Nav Bar c:"
+    export let title = ""
 </script>
 
 <div class="title">
     <!-- <img src="/logo.ico" alt="site logo"> -->
-    <h1>{title}</h1>
+    <!-- <h1>{title}</h1> -->
     <h1>Code and Cusine</h1>
+    <a href="/menu">Menu</a>
+    <a href="/deals">Deals</a>
+    <a href="/reservation">Reservation</a>
+    <a href="/cart">Cart</a>
 
 </div>
 
