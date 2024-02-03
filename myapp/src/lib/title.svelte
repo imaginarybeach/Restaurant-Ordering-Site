@@ -1,9 +1,24 @@
 <script>
     export let title = ""
 </script>
-
+<!-- MACARONI BOWLSSSS-->
 <div class="logo">
     <img src="/favicon.png" alt="site logo"
+        width="50"
+        height="50"/>
+        <img src="/favicon.png" alt="site logo"
+        width="50"
+        height="50"/>
+        <img src="/favicon.png" alt="site logo"
+        width="50"
+        height="50"/>
+        <img src="/favicon.png" alt="site logo"
+        width="50"
+        height="50"/>
+        <img src="/favicon.png" alt="site logo"
+        width="50"
+        height="50"/>
+        <img src="/favicon.png" alt="site logo"
         width="50"
         height="50"/>
 
