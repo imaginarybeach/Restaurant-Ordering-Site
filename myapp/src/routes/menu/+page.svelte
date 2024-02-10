@@ -23,7 +23,7 @@
 <main>
     <h1>Menu</h1>
     
-    <hr>
+    <hr> <!-- the line that goes across-->
 
     <div class="flex-container">
         
@@ -114,7 +114,7 @@
     }
 
     button {
-        background-color: #f76027;
+        background-color: #6e3b91;
         color: white;
         border: none;
         border-radius: 4px;
@@ -132,7 +132,7 @@
     }
 
     button:hover{
-        background-color: #d14f1d;
+        background-color:#4e2966;
         color: white;
     }
 
@@ -165,7 +165,7 @@
 
     :global(body) {
         /*background-image: url("$lib/assets/resturant.jpg");*/
-        background-color: #f2eee2;        
+        background-color: #ece2f2;        
 		color: black;
 		transition: background-color 0.3s;
         background-size: cover;
