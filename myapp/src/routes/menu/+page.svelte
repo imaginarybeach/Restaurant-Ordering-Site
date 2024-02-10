@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 
 <script lang="ts">
     import type { PageData } from '../test1/$types';
     
     export let data: PageData;
-=======
 <!-- npm run dev -->
 <!-- reactive javascript code goes in script-->
+
 <script>
     import Title from '$lib/title.svelte'
     import Sandwich from '$lib/assets/sandwich.jpeg'
@@ -16,7 +15,6 @@
     import Coffee from '$lib/assets/coffee.png'
     import Tea from '$lib/assets/tea.jpg'
     import Ramen from '$lib/assets/ramen.jpg'
->>>>>>> 17e1a84f4ebbe11cf2886ebfec062dc6cc9392ad
 </script>
 
 <Title />
