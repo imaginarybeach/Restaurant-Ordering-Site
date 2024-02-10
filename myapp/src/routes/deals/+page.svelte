@@ -3,6 +3,8 @@
 <script>
     import Title from '$lib/title.svelte';
     import Sandwich from '$lib/assets/sandwich.jpeg'
+    import Pasta from '$lib/assets/pasta.jpeg'
+    import Coffee from '$lib/assets/coffee.png'
 </script>
 
 
@@ -12,10 +14,11 @@
     <h1>Deals and Specials!</h1>
     <hr>
     <div class= "flex-container">
-        <div>
-            <h2>1/2 Price Sandwich Saturday</h2>
-            <img src={Sandwich} alt="Sandwich"/>
-            
+        <div class= "flex-container-pasta">
+            <h2>Half Price Pasta</h2>
+        </div>
+        <div class= "flex-container-coffee">
+            <h2>Free Refills</h2>
         </div>
     </div>
     
@@ -89,11 +92,29 @@
         align-items: center;
     }
 
+    .flex-container-pasta {
+        display: flex;
+        padding: 1rem;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-color: aqua;
+        background-image:
+
+    }
+    .flex-container-coffee {
+        display: flex;
+        padding: 1rem;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-color: #2bff00;
+
+    }
     .flex-container {
         display: flex;
         padding: 1rem;
         flex-flow: row wrap;
         justify-content: space-around;
+        
 
     }
 
