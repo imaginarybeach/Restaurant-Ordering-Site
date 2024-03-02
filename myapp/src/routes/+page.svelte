@@ -21,7 +21,7 @@
         font-family: Arial, Helvetica, sans-serif;
         margin: auto;
         margin-top: 20px;
-        text-align: center
+        text-align: center;
         width: 50%;
         padding: 10px;
         color: black;
