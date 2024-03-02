@@ -10,15 +10,15 @@
 
 <Title />
 
+<meta name="viewport" content="width-device-width, initial-scale=1">
+
+
 <main>
-    <h1>Deals and Specials!</h1>
-    <hr>
-    <div class= "flex-container">
-        <div class= "flex-container-pasta">
-            <h2>Half Price Pasta</h2>
-        </div>
-        <div class= "flex-container-coffee">
-            <h2>Free Refills</h2>
+    <div class="pasta-image">
+        <div class="pasta-text">
+            <h1 style="font-size:50px">Exclusive Deal!</h1>
+            <h2>50% off on Pasta Dishes</h2>
+            <button type="button" class="perfect-flex" onclick="location.href='/';">Add to Order</button>
         </div>
     </div>
     
@@ -26,22 +26,8 @@
 
 
 <style>
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: auto;
-        margin-top: 20px;
-        text-align: center;
-        width: 50%;
-        padding: 10px;
-        color: black;
-    }
-
-    h2 {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: auto;
-        text-align: center;
-        margin-bottom: 3px;
-        color: black;
+    body{
+        margin:0;
     }
 
     hr {
@@ -51,7 +37,7 @@
     }
 
     button {
-        background-color: #f76027;
+        background-color: #370e47;
         color: white;
         border: none;
         border-radius: 4px;
@@ -67,12 +53,6 @@
         transition-duration: 0.4s;
 
     }
-
-    button:hover{
-        background-color: #d14f1d;
-        color: white;
-    }
-
     img{
         display: block;
         border-radius: 15px;
@@ -83,50 +63,27 @@
         height: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    
 
-    .perfect-flex{
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .flex-container-pasta {
-        display: flex;
-        padding: 1rem;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        background-color: aqua;
-        background-image:
-
-    }
-    .flex-container-coffee {
-        display: flex;
-        padding: 1rem;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        background-color: #2bff00;
-
-    }
-    .flex-container {
-        display: flex;
-        padding: 1rem;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        
-
-    }
-
-    :global(body) {
-        /*background-image: url("$lib/assets/resturant.jpg");*/
-        background-color: #f2eee2;        
-		color: black;
-		transition: background-color 0.3s;
-        background-size: cover;
+    .pasta-image {
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/delish-230516-dirty-martini-pasta-038-rl-index-646f71444f8a4.jpg?crop=0.6667704926543113xw:1xh;center,top&resize=1200:*);
+        height: 500px;
+        background-position:center;
         background-repeat: no-repeat;
-        background-position: center;
-        height: auto;
+        background-size: cover;
+        position: relative;
+    }
+    .pasta-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0)00;
+    }
+
+    button:hover{
+        background-color:#7e5699;
+        color: white;
     }
 
 </style>
