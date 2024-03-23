@@ -2,9 +2,12 @@
 <!-- reactive javascript code goes in script-->
 <script>
     import Title from '$lib/title.svelte';
-    import Sandwich from '$lib/assets/sandwich.jpeg'
-    import Pasta from '$lib/assets/pasta.jpeg'
-    import Coffee from '$lib/assets/coffee.png'
+
+    import { fly } from 'svelte/transition';
+    import { onMount } from 'svelte';
+    let ready =  false;
+    onMount(() => ready = true);
+
 </script>
 
 
@@ -16,7 +19,9 @@
 <main>
     <div class="pasta-image">
         <div class="pasta-text">
-            <h1 style="font-size:100px">Exclusive Deal!</h1>
+            {#if ready}
+                <h1 style="font-size:100px" transition:fly={{ y: 200, duration: 2000 }}>Exclusive Deal</h1>
+            {/if}
             <h2 style="font-size:30px">50% off on Pasta Dishes</h2>
             <button type="button" class="perfect-flex" onclick="location.href='/menu';">Add to Order</button>
         </div>
@@ -24,7 +29,9 @@
 
     <div class="tea-image">
         <div class="tea-text">
-            <h1 style="font-size:100px">I'm Thirsty!</h1>
+            {#if ready}
+                <h1 style="font-size:100px" transition:fly={{ y: 200, duration: 2000 }}>I'm Thirsty</h1>
+            {/if}
             <h2 style="font-size:30px">Free Refills on Tea and Soda</h2>
             <button type="button" class="perfect-flex" onclick="location.href='/menu';">Add to Order</button>
         </div>
@@ -32,7 +39,9 @@
 
     <div class="soup-image">
         <div class="soup-text">
-            <h1 style="font-size:100px">Craving More?</h1>
+            {#if ready}
+                <h1 style="font-size:100px" transition:fly={{ y: 200, duration: 2000 }}>Craving More?</h1>
+            {/if}
             <h2 style="font-size:30px">Get a Soup to Go</h2>
             <button type="button" class="perfect-flex" onclick="location.href='/menu';">Add to Order</button>
         </div>
