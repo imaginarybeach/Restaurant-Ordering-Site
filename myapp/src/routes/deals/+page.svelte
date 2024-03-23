@@ -78,11 +78,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0)00;
+        color: rgb(145, 117, 158);
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: rgb(233, 226, 238);
+        
     }
 
     button:hover{
-        background-color:#7e5699;
+        background-color:#65417e;
         color: white;
     }
 
