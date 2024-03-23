@@ -73,6 +73,7 @@
         position: relative;
     }
     .pasta-text {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         position: absolute;
         top: 50%;
@@ -88,5 +89,4 @@
         background-color:#65417e;
         color: white;
     }
-
 </style>
