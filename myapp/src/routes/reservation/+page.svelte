@@ -19,11 +19,31 @@
 	];
     let selected="";
 
-</script>
+    const inputValues = (e) => {
+        firstName = e.target.value;
 
+    }
+
+
+
+</script>
 
 <Title />
 
+<form on:submit|preventDefault={validate}>
+    <input>
+    <button type="submit">First Name</button>
+    <button type="submit">Last Name</button>
+    
+
+
+
+</form>
+
+
+
+
+<p>{firstName}</p>
 <h1>Reservation</h1>
 <div class=flexcontainer>
     <div>
@@ -57,7 +77,7 @@
         <input bind:value={phoneNumber} />
     </div>
     <div>
-        <button type="button" onclick="location.href='/';">
+        <button type="button" on:submit={inputValues}>
             Submit
         </button>
     </div>
@@ -67,6 +87,7 @@
 
 
 <style>
+    
     h3{
         font-family: Arial, Helvetica, sans-serif;
         margin: auto;
